@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { scroll-behavior: smooth; }
+html { scrollbar-gutter: stable; }
+body { font-family: 'Inter', sans-serif; background:#0a0a0f; color:#fff; overflow-x:hidden; }
+.mono { font-family: 'JetBrains Mono', monospace; }
+.display { font-family: 'Space Grotesk', sans-serif; letter-spacing:-0.04em; }
+
+::-webkit-scrollbar { width:6px; height:6px; }
+::-webkit-scrollbar-track { background:#11111b; }
+::-webkit-scrollbar-thumb { background:#2a2a3e; border-radius:99px; }
+::-webkit-scrollbar-thumb:hover { background:#3a3a5e; }
+
+/* grid */
+.grid-cyan {
+  background-image:
+    linear-gradient(rgba(0,229,255,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,229,255,0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.grid-fade {
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+}
+
+/* focus */
+*:focus-visible { outline:2px solid #00e5ff; outline-offset:2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration:0.01ms !important; transition-duration:0.01ms !important; }
+}

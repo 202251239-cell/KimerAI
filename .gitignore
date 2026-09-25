@@ -1,0 +1,10 @@
+portfolio/node_modules/
+portfolio/.next/
+portfolio/out/
+portfolio/.vercel/
+.env
+.env.local
+*.log
+portfolio/package-lock.json
+portfolio/tsconfig.tsbuildinfo
+portfolio/next-env.d.ts
